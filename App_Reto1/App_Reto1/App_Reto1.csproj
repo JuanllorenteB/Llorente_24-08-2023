@@ -67,10 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="registro.css" />
+    <Content Include="registro_credito.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registro_credito.aspx.cs">
+      <DependentUpon>registro_credito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro_credito.aspx.designer.cs">
+      <DependentUpon>registro_credito.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
